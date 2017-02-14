@@ -8,20 +8,20 @@ html, body {
   margin: 0 auto;
   position: relative;
 
-  @media #{$mobile-media} {
+  @media (min-width : $screen-xs) {
     width: 95%;
 
   }
-  @media #{$tablets-media} {
+  @media (min-width: $screen-sm) {
     width: 768px;
 
   }
-  @media #{$medium-media} {
+  @media (min-width: $screen-md) {
     width: 992px;
 
   }
 
-  @media #{$large-media} {
+  @media (min-width: $screen-lg) {
     width: 1180px;
 
   }

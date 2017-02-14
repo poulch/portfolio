@@ -1,12 +1,19 @@
+@import 'base/variables';
 @import 'base/settings';
 @import 'base/fonts';
 @import 'base/mixins';
-@import 'base/variables';
+
 
 @import 'partials/header';
 @import 'partials/footer';
 
-@import 'pages/home';
+@import 'pages/home/about';
+@import 'pages/home/contact';
+@import 'pages/home/milestones';
+@import 'pages/home/quote';
+@import 'pages/home/resume';
+@import 'pages/home/skills';
+@import 'pages/home/works';
 
 
 
