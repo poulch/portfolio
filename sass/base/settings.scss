@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+
+  @media #{$mobile-media} {
+    width: 95%;
+
+  }
+  @media #{$tablets-media} {
+    width: 768px;
+
+  }
+  @media #{$medium-media} {
+    width: 992px;
+
+  }
+
+  @media #{$large-media} {
+    width: 1180px;
+
+  }
+
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
