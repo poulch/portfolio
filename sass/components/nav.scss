@@ -1,0 +1,96 @@
+.page-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #262930;
+    transition: left .3s ease-in-out;
+    z-index: 3;
+
+    @media (min-width: $screen-md) {
+        position: static;
+        height: 90px;
+        background: $white;
+
+    }
+
+    &.open {
+        left: 0;
+    }
+
+    &__flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+
+        @media (min-width: $screen-md) {
+            height: 90px;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        @media (min-width: $screen-md) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__list-item {
+        width: 80%;
+        @include margin-auto;
+        border-bottom: 1px dashed #4d4d4d;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+
+        @media (min-width: $screen-md) {
+            border: 0;
+            padding-bottom: 0;
+            margin: 0;
+            margin-right: 40px;
+            display: inline-block;
+            width: initial;
+        }
+
+        &--last {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+
+        display: block;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 33px;
+        color: $white;
+        text-decoration: none;
+        transition: color .3s ease-in-out;
+
+        @media (min-width: $screen-md) {
+            color: $main-color;
+            font-weight: 800;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            text-decoration: none;
+            color: $red;
+
+
+        }
+    }
+}
