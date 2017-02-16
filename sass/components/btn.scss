@@ -1,0 +1,22 @@
+.btn {
+    display: block;
+    background: $red;
+    height: 50px;
+    border-radius: 3px;
+    padding: 0 20px;
+
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    @include secendery-font;
+    font-weight: 800;
+    text-transform: uppercase;
+
+
+    &__icon {
+        color: $white;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+}
