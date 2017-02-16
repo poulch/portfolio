@@ -1,9 +1,10 @@
 .btn {
-    display: block;
+    display: inline-block;
+    margin: 0 auto;
     background: $red;
     height: 50px;
-    border-radius: 3px;
-    padding: 0 20px;
+    border-radius: 4px;
+    padding: 0 27px;
 
     font-size: 20px;
     line-height: 50px;
@@ -11,12 +12,27 @@
     @include secendery-font;
     font-weight: 800;
     text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+
+    @media (min-width: $screen-md) {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        background: #c0392b;
+    }
 
 
     &__icon {
         color: $white;
         font-size: 20px;
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
 }
