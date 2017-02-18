@@ -65,6 +65,57 @@ html, body {
     }
 }
 
+.main-subheading {
+    @include main-font;
+    font-weight: 800;
+    color: $white;
+    text-align: center;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+        font-size: 36px;
+        line-height: 26px;
+
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+
+.invisible {
+    visibility: hidden;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
