@@ -27,8 +27,7 @@ var jsLoadPath = [
 ];
 
 var cssLoadPath = [
-    'css/normalize.css',
-    'bower_components/components-font-awesome/css/font-awesome.min.css'
+    'css/normalize.css'
 
 ];
 

@@ -1,8 +1,13 @@
 .about-me {
 
     .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
         @media (min-width: $screen-md) {
-            display: flex;
+            flex-direction: row;
             justify-content: flex-start;
             margin-top: 30px;
 
@@ -51,6 +56,7 @@
     }
 
     &__details {
+        margin-top: 50px;
         @media (min-width: $screen-md) {
             margin-top: 20px;
             margin-left: 58px;
@@ -90,9 +96,22 @@
         line-height: 32px;
         text-align: center;
 
+        margin: 50px 0;
+
         @media (min-width: $screen-md) {
+            margin-top: 0;
             text-align: left;
             margin-bottom: 50px;
+        }
+    }
+
+    &__btn-outer {
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media (min-width: $screen-md) {
+            text-align: left;
+            margin-bottom: 0;
         }
     }
 
@@ -110,6 +129,7 @@
         color: $main-color;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 50px;
 
         @media (min-width: $screen-md) {
             margin-top: 17px;
@@ -118,12 +138,36 @@
         }
     }
 
+    &__hobbies-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (min-width: $screen-md) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__hobby-item-outer {
+
+        width: 33.333333%;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: $screen-xs) {
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: $screen-sm) {
+            width: 25%;
+        }
+    }
+
     &__hobby-item {
         width: 90px;
         height: 90px;
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 10px;
         background: #f1f1f1;
 
         display: flex;
