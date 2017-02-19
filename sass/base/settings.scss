@@ -1,6 +1,5 @@
 html, body {
-    height: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     @include main-font;
     color: $white;
 }
@@ -39,7 +38,8 @@ html, body {
     line-height: 48px;
     letter-spacing: 0.1em;
     padding-bottom: 20px;
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-top: 0;
     margin-bottom: 20px;
     position: relative;
     text-transform: uppercase;
@@ -48,7 +48,7 @@ html, body {
 
     @media (min-width: $screen-md) {
         font-size: 60px;
-        margin-top: 150px;
+        padding-top: 150px;
         padding-bottom: 40px;
         margin-bottom: 60px;
     }
