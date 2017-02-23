@@ -2,6 +2,7 @@ html, body {
     min-height: 100vh;
     @include main-font;
     color: $white;
+    box-sizing: border-box;
 }
 
 .container {

@@ -1,7 +1,12 @@
 .resume {
     background: $dark-bg-color;
     color: $white;
-    padding-bottom: 150px;
+
+    padding: 0 20px 150px 20px;
+
+    @media (min-width: $screen-sm) {
+        padding: 0 0 150px 0;
+    }
 
     &__heading {
         color: $white;
