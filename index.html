@@ -72,37 +72,39 @@
 </header>
 <nav class="page-nav">
     <h1 class="visuallyhidden">Nawigacja</h1>
+    <div class="page-nav__close-btn">
+        <span class="page-nav__close-span"></span>
+        <span class="page-nav__close-span"></span>
+    </div>
     <div class="container">
         <div class="page-nav__flex-container">
             <ul class="page-nav__list">
+
+
                 <li class="page-nav__list-item">
-                    <a href="#" class="page-nav__link">Strona główna</a>
+                    <a href="#about" class="page-nav__link">O mnie</a>
                 </li>
 
                 <li class="page-nav__list-item">
-                    <a href="#" class="page-nav__link">O mnie</a>
+                    <a href="#cv" class="page-nav__link">CV</a>
                 </li>
 
                 <li class="page-nav__list-item">
-                    <a href="#" class="page-nav__link">CV</a>
+                    <a href="#skills" class="page-nav__link">Umiejętności</a>
                 </li>
 
                 <li class="page-nav__list-item">
-                    <a href="#" class="page-nav__link">Umiejętności</a>
-                </li>
-
-                <li class="page-nav__list-item">
-                    <a href="#" class="page-nav__link">Realizacje</a>
+                    <a href="#works" class="page-nav__link">Realizacje</a>
                 </li>
 
                 <li class="page-nav__list-item page-nav__list-item--last">
-                    <a href="#" class="page-nav__link">Kontakt</a>
+                    <a href="#contact" class="page-nav__link">Kontakt</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<section class="about-me">
+<section id="about" class="about-me">
     <div class="container">
         <h1 class="main-heading">O mnie</h1>
 
@@ -245,7 +247,7 @@
         </div>
     </div>
 </section>
-<section class="resume">
+<section id="cv" class="resume">
     <div class="container">
         <h1 class="main-heading resume__heading">curriculum vitae</h1>
 
@@ -334,7 +336,7 @@
 
     </div>
 </section>
-<section class="skills">
+<section id="skills" class="skills">
     <div class="container">
         <h1 class="main-heading">umiejętności</h1>
         <div class="skills__items">
@@ -458,7 +460,7 @@
 
     </div>
 </section>
-<section class="works">
+<section id="works" class="works">
     <div class="container">
         <h1 class="main-heading resume__heading">Realizacje</h1>
 
@@ -522,15 +524,12 @@
         </blockquote>
     </div>
 </section>
-
-
-<section class="contact">
+<section id="contact" class="contact">
     <div class="container">
         <h1 class="main-heading">kontakt</h1>
-
         <div class="contact__address-data data">
 
-            <div class="data__item data__item--first">
+            <a href="tel:793851807" class="data__item data__item--first">
                 <div class="data__icon-container data__icon-container--first">
                     <span class="data__icon fa fa-phone" aria-hidden="true"></span>
 
@@ -542,10 +541,10 @@
                         793851807
                     </div>
                 </div>
-            </div>
+            </a>
 
 
-            <div class="data__item">
+            <a href="mailto:chyla1988@gmail.com" class="data__item">
                 <div class="data__icon-container data__icon-container--secend">
                     <span class="data__icon fa fa-envelope" aria-hidden="true"></span>
                 </div>
@@ -556,14 +555,32 @@
                        chyla1988@gmail.com
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
+
+        <form action="https://formspree.io/your@email.com" class="form" method="POST">
+            <div class="form__group">
+                <input type="text" name="name" class="form__input form__input--float form__input--float--first " placeholder="Imię i nazwisko">
+                <input type="text" name="email" class="form__input form__input--float" placeholder="Adres e-mail">
+            </div>
+
+            <textarea name="text" rows="4" class="form__input form__input--textarea" placeholder="Tekst wiadomości"></textarea>
+            <button type="submit" class="form__submit"><span class="form__submit-icon fa fa-paper-plane" aria-hidden="true"></span> Wyślij</button>
+        </form>
+
     </div>
 </section>
 
 
 <footer class="page-footer">
     <div class="container">
+        <a href="javascript:" class="page-footer__up-btn">
+            <img src="img/arrow-up.png" alt="">
+        </a>
+
+        <p class="page-footer__text">
+            &copy; 2017 Paweł Chyła
+        </p>
 
     </div>
 </footer>
