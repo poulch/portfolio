@@ -10,7 +10,8 @@
     padding-top: 105px;
 
     @media (min-width: $screen-md) {
-        padding-bottom: 65px;
+        padding-bottom: 150px;
+        padding-top: 150px;
     }
 
     &:before {
