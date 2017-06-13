@@ -1,5 +1,4 @@
 .works {
-    background: $main-color;
     &__items {
 
         padding-bottom: 50px;
@@ -31,6 +30,12 @@
             margin-bottom: 20px;
 
 
+        }
+
+        &--onwelo {
+            background: url(../img/works/onwelo.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
         &--no-margin {

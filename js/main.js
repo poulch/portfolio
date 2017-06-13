@@ -7,8 +7,9 @@ const AppModule = function () {
     const menuItem = document.querySelectorAll('.page-nav__link');
     const form = document.querySelector('.form');
     const formInputs = document.querySelectorAll('.form input, .form textarea');
+    const sections = document.querySelectorAll('.section');
 
-    const pageHeaderHeight = pageHeader.innerHeight;
+    const pageHeaderHeight = pageHeader.offsetHeight;
     const windowWidth = window.innerWidth;
     const scrollTop = window.pageYOffset;
 
@@ -43,15 +44,17 @@ const AppModule = function () {
     }
 
     function stickyMenu() {
-        $(window).on('scroll', () => {
-            if (windowWidth > 992) {
+        if (windowWidth > 992) {
+            $(window).on('scroll', () => {
+                const scrollTop = window.pageYOffset;
                 if (scrollTop >= pageHeaderHeight) {
                     pageNav.classList.add('sticky');
                 } else {
                     pageNav.classList.remove('sticky')
                 }
-            }
-        });
+
+            });
+        }
     }
 
     function menuScroll() {
@@ -65,6 +68,33 @@ const AppModule = function () {
                 }, 1000);
             });
         });
+
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset;
+
+            sections.forEach(element => {
+                const elementScrollTop = element.offsetTop;
+                const elementId = element.getAttribute('id');
+
+                if (scrollTop >= elementScrollTop) {
+                    const currentMenuItem = document.querySelector('.page-nav__link[data-id='+elementId+']');
+                    const menuItems = document.querySelectorAll('.page-nav__link');
+
+                    menuItems.forEach(element => {
+                        element.classList.remove('select');
+                    });
+
+                    currentMenuItem.classList.add('select');
+                }
+
+            });
+
+
+
+
+        });
+
+
     }
 
     function formValidation() {
@@ -88,7 +118,6 @@ const AppModule = function () {
                 }
             });
         });
-
 
 
         form.addEventListener('submit', () => {

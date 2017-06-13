@@ -1,5 +1,7 @@
 .contact {
-    margin-bottom: 130px;
+    padding-bottom: 130px;
+    background: $main-color;
+
 
     .data {
         display: flex;
@@ -23,7 +25,7 @@
             &:hover,
             &:active,
             &:focus {
-                color: $main-color;
+                color: #FFFFFF;
             }
 
 
@@ -68,7 +70,7 @@
 
         &__heading {
             font-weight: 800;
-            color: $main-color;
+            color: #FFFFFF;
             text-transform: uppercase;
             font-size: 22px;
             line-height: 28px;

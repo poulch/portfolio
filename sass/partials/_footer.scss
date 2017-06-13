@@ -1,8 +1,8 @@
 .page-footer {
     height: 220px;
     width: 100%;
-    background: $main-color;
-    color: #FFFFFF;
+    background: #FFFFFF;
+    color: $main-color;
     position: relative;
 
     @media (min-width: $screen-md) {
@@ -14,6 +14,7 @@
         top: -40px;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 2;
 
         width: 65px;
         height: 65px;
