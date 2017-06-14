@@ -16,13 +16,26 @@
         }
     }
 
+    &__text-container {
+        text-align: justify;
+        @media (min-width: $screen-md) {
+            float: left;
+            width: 50%;
+            margin-left: 50px;
+        }
+
+        @media (min-width: $screen-lg) {
+            width: 65%;
+        }
+    }
+
     &__text {
         @include main-font;
         font-weight: 400;
         font-size: 16px;
         line-height: 25px;
         color: $secender-font-color;
-        text-align: justify;
+        text-align: center;
 
         @media (min-width: $screen-md) {
             line-height: 28px;
@@ -52,6 +65,7 @@
             width: 340px;
             height: 330px;
             margin-top: 25px;
+            float: left;
         }
 
 

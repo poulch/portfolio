@@ -100,76 +100,33 @@
     <div class="container">
         <h1 class="main-heading">O mnie</h1>
 
-        <div class="about-me__text">
-            <p class="about-me__text-lead">
-                Witam, mam na imię Paweł i jestem front-end developerem. Swoją przygodę zawodową rozpocząłem stażem
-                zawodowym, który pozwolił mi zapoznać się z takimi technologiami jak Html5, Css3, Javascript, Php. Po
-                zakończeniu stażu postanowiłem ukierunkuwać się na front-end i dalej rozwijać się w tym
-                kierunku. Aktualnie cały czas szlifuje Javascript(ES6,) żeby móc w niedługim czasie zacząć poznawać
-                frameworki javascipt z  dobrze ugruntowaną wiedzą samego javascipt.
-            </p>
-            <p>
-                Jeśli chodzi o mnie jestem  osobą ambitną, cierpliwą, wytrwale  dążącą do celu. Uwielbiam uczyć się nowych rzeczy i chciałbym stale doskonalić
-                swoje umiejętności w zespole bardziej doświadczonych proramistów. Lubie poznawać nowych ludzi a praca
-                zespołowa sprawa mi przyjemność. Jestem osobą kontaktową i bezkonfliktową.
-            </p>
-        </div>
-
-        <div class="clearfix flex-container">
+        <div class="about-me__text clearfix">
             <img src="img/me.jpg" class="about-me__photo" alt="Paweł Chyła photo">
-
-            <div class="about-me__details">
-                <div class="about-me__detail-info">
-                    <div class="about-me__info-item clearfix">
-                        <p class="about-me__info-heading">Data urodzenia</p>
-                        <p class="about-me__info-text">: 12.05.1988</p>
-                    </div>
-                    <div class="about-me__info-item clearfix">
-                        <p class="about-me__info-heading">Telefon</p>
-                        <p class="about-me__info-text">: 574 139 522</p>
-                    </div>
-                    <div class="about-me__info-item clearfix">
-                        <p class="about-me__info-heading">E-mail</p>
-                        <p class="about-me__info-text">: chyla1988@mail.com</p>
-                    </div>
-
-                </div>
-
-                <p class="about-me__signature">Paweł Chyła</p>
+            <div class="about-me__text-container">
+                <p class="about-me__text-lead">
+                    Witam, mam na imię Paweł i jestem front-end developerem. Swoją przygodę zawodową rozpocząłem stażem
+                    zawodowym, który pozwolił mi zapoznać się z takimi technologiami jak Html5, Css3, Javascript, Php.
+                    Po
+                    zakończeniu stażu postanowiłem ukierunkuwać się na front-end i dalej rozwijać się w tym
+                    kierunku. Aktualnie cały czas szlifuje Javascript(ES6,) żeby móc w niedługim czasie zacząć poznawać
+                    frameworki javascipt z dobrze ugruntowaną wiedzą samego javascipt.
+                </p>
+                <p>
+                    Jeśli chodzi o mnie jestem osobą ambitną, cierpliwą, wytrwale dążącą do celu. Uwielbiam uczyć się
+                    nowych rzeczy i chciałbym stale doskonalić
+                    swoje umiejętności w zespole bardziej doświadczonych proramistów. Lubie poznawać nowych ludzi a
+                    praca
+                    zespołowa sprawa mi przyjemność. Jestem osobą kontaktową i bezkonfliktową.
+                </p>
 
                 <div class="about-me__btn-outer">
                     <a href="cv.pdf" download="cv.pdf" class="btn"><span class="btn__icon fa fa-download"></span>
                         Pobierz CV</a>
                 </div>
             </div>
-
-            <div class="about-me__hobbies clearfix">
-                <p class="about-me__hobbies-heading">Hobby i zainteresowania</p>
-
-                <div class="about-me__hobbies-container clearfix">
-                    <div class="about-me__hobby-item-outer">
-                        <div class="about-me__hobby-item">
-                            <span class="about-me__hobby-icon fa fa-gamepad"></span>
-                            <span class="about-me__hobby-title">Gry</span>
-                        </div>
-                    </div>
-                    <div class="about-me__hobby-item-outer">
-                        <div class="about-me__hobby-item">
-                            <span class="about-me__hobby-icon fa fa-laptop"></span>
-                            <span class="about-me__hobby-title">Tech</span>
-
-                        </div>
-                    </div>
-                    <div class="about-me__hobby-item-outer">
-                        <div class="about-me__hobby-item">
-                            <span class="about-me__hobby-icon fa fa-headphones"></span>
-                            <span class="about-me__hobby-title">Smartphony</span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
+
     </div>
 </section>
 <section id="cv" class="resume section">
@@ -267,49 +224,61 @@
 
         <div class="works__items clearfix">
 
-            <a href="http://optopol.com.pl/" target="_blank" class="works__item works__item--no-margin">
-                <div class=apla-hover>
-                    <img src="img/plus.png" alt="" class="apla-hover__icone">
-                    <p class="apla-hover__project-name">Optopol</p>
-                </div>
-                <img src="img/works/optopol.jpg" class="works__image" alt="">
-            </a>
-            <a href="http://beta.fqs.pl" target="_blank" class="works__item">
-                <div class=apla-hover>
-                    <img src="img/plus.png" alt="" class="apla-hover__icone">
-                    <p class="apla-hover__project-name">FQS POLAND</p>
+            <div class="works__item-container">
+                <h2 class="works__name">OPTOPOL</h2>
+                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem strone firmową, wraz z
+                    katalgiem produktów, listą wystaw oraz publikacji. Na stronie znajduje się też możłowość
+                    wyszukiwanie dystrybutorów produktów Optopol na całym świecie oraz w poszcególnych krajach. Przy
+                    projekcie wykorzystywałem: Magific Popup, BxSlider, Packery, GSQP</p>
+                <a href="http://optopol.com.pl/" target="_blank" class="works__item works__item--no-margin">
+                    <img src="img/works/optopol.jpg" class="works__image" alt="">
+                </a>
+            </div>
+            <!--   <a href="http://beta.fqs.pl" target="_blank" class="works__item">
+                   <h2 class="works__name">FQS POLAND</h2>
+                   <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem serwis firmowy Instytutu
+                       Salamandra. Strona zawiera informacje o firmię, listę zabiegów oraz technolgi wykonywanych w
+                       instytucie.</p>
+                   <img src="img/works/fujitsu.jpg" class="works__image" alt="">
+               </a>-->
+            <div class="works__item-container">
+                <h2 class="works__name">INWAVE</h2>
+                <p class="works__description">Na zlecenie mojego pracodawcy, odświeżyłem wygląd jego strony firmowej. Na
+                    stronę składa się kilka sekcji znajdujących się na stronie głównej, co przyśpiesz przeglądanie
+                    strony bez potrzeby przeładowania strony.</p>
+                <a href="http://inwave.pl" class="works__item works__item--no-margin">
+                    <img src="img/works/inwave.jpg" class="works__image" alt="">
+                </a>
+            </div>
 
-                </div>
-                <img src="img/works/fujitsu.jpg" class="works__image" alt="">
-            </a>
-            <a href="http://inwave.pl" class="works__item works__item--no-margin">
-                <div class=apla-hover>
-                    <img src="img/plus.png" alt="" class="apla-hover__icone">
-                    <p class="apla-hover__project-name">Inwave</p>
-                </div>
-                <img src="img/works/inwave.jpg" class="works__image" alt="">
-            </a>
-            <a href="http://instytutsalamandra.pl" target="_blank" class="works__item">
-                <div class=apla-hover>
-                    <img src="img/plus.png" alt="" class="apla-hover__icone">
-                    <p class="apla-hover__project-name">Instytut Salamandra</p>
-                </div>
-                <img src="img/works/salamandra.jpg" class="works__image" alt="">
-            </a>
-            <a href="http://nowoczesnastodola.pl" target="_blank" class="works__item works__item--no-margin">
-                <div class=apla-hover>
-                    <img src="img/plus.png" alt="" class="apla-hover__icone">
-                    <p class="apla-hover__project-name">Nowoczesna Stodoła</p>
-                </div>
-                <img src="img/works/stodola.jpg" class="works__image" alt="">
-            </a>
-            <a href="http://onwelo.com" target="_blank" class="works__item works__item--onwelo works__item--no-margin">
-                <div class=apla-hover>
-                    <img src="img/plus.png" alt="" class="apla-hover__icone">
-                    <p class="apla-hover__project-name">Onwelo</p>
-                </div>
+            <div class="works__item-container">
+                <h2 class="works__name">INSTYTUT SALAMANDRA</h2>
+                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem serwis firmowy Instytutu
+                    Salamandra. Strona zawiera informacje o firmię, listę zabiegów oraz technolgi wykonywanych w
+                    instytucie.</p>
+                <a href="http://instytutsalamandra.pl" target="_blank" class="works__item">
+                    <img src="img/works/salamandra.jpg" class="works__image" alt="">
+                </a>
+            </div>
 
-            </a>
+            <div class="works__item-container">
+                <h2 class="works__name">NOWOCZESNA STODOLA</h2>
+                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem portal NowoczesnaStodola. Porta
+                    posiada możłiwość rejestracj i logowania użytkowaników. Każdy użytkownik może dodawać do swoje
+                    tablicy ulubionr projekty i zdjęcia. Portal posiada także rozbudowany formularz wyszukania
+                    architekta do swojego projektu.</p>
+                <a href="http://nowoczesnastodola.pl" target="_blank" class="works__item works__item--no-margin">
+                    <img src="img/works/stodola.jpg" class="works__image" alt="">
+                </a>
+            </div>
+
+            <div class="works__item-container">
+                <h2 class="works__name">ONWELO</h2>
+                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem serwis firmowy Onwelo. Strona
+                    została podzielona na kilka podstron między innymi, stronę z postami, ofertami pracy, informacjami o
+                    samej firmie oraz stronę kontaktową</p>
+                <a href="http://onwelo.com" target="_blank" class="works__item works__item--onwelo works__item--no-margin"></a>
+            </div>
 
 
         </div>
