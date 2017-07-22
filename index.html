@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/lib.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Arizonia|Raleway:300,400,500,600,800">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -26,6 +28,7 @@
             <span class="page-header__span"></span>
         </div>
     </button>
+
 
     <div class="container">
         <h1 class="page-header__heading">Paweł Chyła</h1>
@@ -66,7 +69,7 @@
     </div>
 </header>
 <nav class="page-nav">
-    <h1 class="visuallyhidden">Nawigacja</h1>
+    <h2 class="visuallyhidden">Nawigacja</h2>
     <div class="page-nav__close-btn">
         <span class="page-nav__close-span"></span>
         <span class="page-nav__close-span"></span>
@@ -98,10 +101,10 @@
 </nav>
 <section id="about" class="about-me section">
     <div class="container">
-        <h1 class="main-heading">O mnie</h1>
+        <h2 class="main-heading">O mnie</h2>
 
         <div class="about-me__text clearfix">
-            <img src="img/me.jpg" class="about-me__photo" alt="Paweł Chyła photo">
+            <img src="dist/img/me.jpg" class="about-me__photo" alt="Paweł Chyła photo">
             <div class="about-me__text-container">
                 <p class="about-me__text-lead">
                     Witam, mam na imię Paweł i jestem front-end developerem. Swoją przygodę zawodową rozpocząłem stażem
@@ -114,7 +117,7 @@
                 <p>
                     Jeśli chodzi o mnie jestem osobą ambitną, cierpliwą, wytrwale dążącą do celu. Uwielbiam uczyć się
                     nowych rzeczy i chciałbym stale doskonalić
-                    swoje umiejętności w zespole bardziej doświadczonych proramistów. Lubie poznawać nowych ludzi a
+                    swoje umiejętności w zespole bardziej doświadczonych programistów. Lubie poznawać nowych ludzi a
                     praca
                     zespołowa sprawa mi przyjemność. Jestem osobą kontaktową i bezkonfliktową.
                 </p>
@@ -131,7 +134,7 @@
 </section>
 <section id="cv" class="resume section">
     <div class="container">
-        <h1 class="main-heading resume__heading">Curriculum Vitae</h1>
+        <h2 class="main-heading resume__heading">Curriculum Vitae</h2>
 
         <article class="resume__experiences">
             <div class="resume__subheading">
@@ -183,7 +186,7 @@
         </article>
         <article class="resume__education education">
             <div class="resume__subheading resume__subheading--education">
-                <h2 class="main-subheading">Edukacja</h2>
+                <h3 class="main-subheading">Edukacja</h3>
             </div>
 
             <div class="resume__content">
@@ -194,7 +197,7 @@
                 <div class="resume__item item item--right">
                     <p class="item__heading">Wykształcenie wyższe</p>
                     <p class="item__subheading">Wyższa Szkoła Humanistyczno-Przyrodnicza w Sandomierzu<span
-                        class="item__company-name-left">2009 - 2012</span></p>
+                            class="item__company-name-left">2009 - 2012</span></p>
                     <p class="item__text">
                         Trzyletnie studnia licencjackie na kierunku administracja
                     </p>
@@ -203,14 +206,14 @@
                 <div class="resume__item item item--left item--left-v2">
                     <p class="item__heading">Wyszktałcenie średnie</p>
                     <p class="item__subheading"><span
-                        class="item__company-name">Zespół Szkół Nr 4 w Stalowej Woli</span> 2004 - 2007</p>
+                            class="item__company-name">Zespół Szkół Nr 4 w Stalowej Woli</span> 2004 - 2007</p>
                     <p class="item__text item__text--left">
                         Trzyletnie liceum ogolnokształconce o profilu integracja europejska.
                     </p>
                 </div>
 
                 <div class="resume__icon-container resume__icon-container--finish">
-                    <img src="img/ribbon.png" alt="">
+                    <img src="dist/img/ribbon.png" alt="">
                 </div>
             </div>
         </article>
@@ -220,64 +223,76 @@
 </section>
 <section id="works" class="works section">
     <div class="container">
-        <h1 class="main-heading">Realizacje</h1>
+        <h2 class="main-heading">Realizacje</h2>
 
         <div class="works__items clearfix">
 
             <div class="works__item-container">
-                <h2 class="works__name">OPTOPOL</h2>
-                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem strone firmową, wraz z
-                    katalgiem produktów, listą wystaw oraz publikacji. Na stronie znajduje się też możłowość
-                    wyszukiwanie dystrybutorów produktów Optopol na całym świecie oraz w poszcególnych krajach. Przy
-                    projekcie wykorzystywałem: Magific Popup, BxSlider, Packery, GSQP</p>
-                <a href="http://optopol.com.pl/" target="_blank" class="works__item works__item--no-margin">
-                    <img src="img/works/optopol.jpg" class="works__image" alt="">
-                </a>
-            </div>
-            <!--   <a href="http://beta.fqs.pl" target="_blank" class="works__item">
-                   <h2 class="works__name">FQS POLAND</h2>
-                   <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem serwis firmowy Instytutu
-                       Salamandra. Strona zawiera informacje o firmię, listę zabiegów oraz technolgi wykonywanych w
-                       instytucie.</p>
-                   <img src="img/works/fujitsu.jpg" class="works__image" alt="">
-               </a>-->
-            <div class="works__item-container">
-                <h2 class="works__name">INWAVE</h2>
-                <p class="works__description">Na zlecenie mojego pracodawcy, odświeżyłem wygląd jego strony firmowej. Na
-                    stronę składa się kilka sekcji znajdujących się na stronie głównej, co przyśpiesz przeglądanie
-                    strony bez potrzeby przeładowania strony.</p>
-                <a href="http://inwave.pl" class="works__item works__item--no-margin">
-                    <img src="img/works/inwave.jpg" class="works__image" alt="">
-                </a>
+                <img src="dist/img/works/optopol.jpg" class="works__image" alt="">
+
+                <div class="work__item-content">
+                    <h3 class="works__name">OPTOPOL</h3>
+                    <p class="works__subheading">Technologie:</p>
+                    <p class="works__tech-list">
+                        HTML5, CSS3, SASS, JQuery, ScrollMagic, GSAP, BxSlider, packery
+                    </p>
+                    <p class="works__subheading">Online</p>
+                    <a href="http://optopol.com/" class="works__link" target="_blank">optopol.com</a>
+
+                </div>
             </div>
 
             <div class="works__item-container">
-                <h2 class="works__name">INSTYTUT SALAMANDRA</h2>
-                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem serwis firmowy Instytutu
-                    Salamandra. Strona zawiera informacje o firmię, listę zabiegów oraz technolgi wykonywanych w
-                    instytucie.</p>
-                <a href="http://instytutsalamandra.pl" target="_blank" class="works__item">
-                    <img src="img/works/salamandra.jpg" class="works__image" alt="">
-                </a>
+                <img src="dist/img/works/inwave.jpg" class="works__image" alt="">
+
+                <div class="work__item-content">
+                    <h3 class="works__name">INWAVE</h3>
+                    <p class="works__subheading">Technologie:</p>
+                    <p class="works__tech-list">
+                        HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Flickity, AOS,
+                    </p>
+                    <p class="works__subheading">Online</p>
+                    <a href="http://inwave.pl" class="works__link" target="_blank">inwave.pl</a>
+                </div>
             </div>
 
             <div class="works__item-container">
-                <h2 class="works__name">NOWOCZESNA STODOLA</h2>
-                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem portal NowoczesnaStodola. Porta
-                    posiada możłiwość rejestracj i logowania użytkowaników. Każdy użytkownik może dodawać do swoje
-                    tablicy ulubionr projekty i zdjęcia. Portal posiada także rozbudowany formularz wyszukania
-                    architekta do swojego projektu.</p>
-                <a href="http://nowoczesnastodola.pl" target="_blank" class="works__item works__item--no-margin">
-                    <img src="img/works/stodola.jpg" class="works__image" alt="">
-                </a>
+                <img src="dist/img/works/salamandra.jpg" class="works__image" alt="">
+                <div class="work__item-content">
+                    <h3 class="works__name">INSTYTUT SALAMANDRA</h3>
+                    <p class="works__subheading">Technologie:</p>
+                    <p class="works__tech-list">
+                        HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Flickity, AOS,
+                    </p>
+                    <p class="works__subheading">Online</p>
+                    <a href="http://instytutsalamandra.pl" class="works__link" target="_blank">instytutsalamandra.pl</a>
+                </div>
             </div>
 
             <div class="works__item-container">
-                <h2 class="works__name">ONWELO</h2>
-                <p class="works__description">Na zlecenie mojego pracodawcy, zakodowałem serwis firmowy Onwelo. Strona
-                    została podzielona na kilka podstron między innymi, stronę z postami, ofertami pracy, informacjami o
-                    samej firmie oraz stronę kontaktową</p>
-                <a href="http://onwelo.com" target="_blank" class="works__item works__item--onwelo works__item--no-margin"></a>
+                <img src="dist/img/works/stodola.jpg" class="works__image" alt="">
+                <div class="work__item-content">
+                    <h3 class="works__name">NOWOCZESNA STODOLA</h3>
+                    <p class="works__subheading">Technologie:</p>
+                    <p class="works__tech-list">
+                        HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Animate.css, ScrollMagic, GSAP, Waypoints.js,
+                    </p>
+                    <p class="works__subheading">Online</p>
+                    <a href="http://nowoczesnastodola.pl" class="works__link" target="_blank">nowoczesnastodola.pl</a>
+                </div>
+            </div>
+
+            <div class="works__item-container">
+                <img src="dist/img/works/onwelo.jpg" class="works__image" alt="">
+                <div class="work__item-content">
+                    <h3 class="works__name">ONWELO</h3>
+                    <p class="works__subheading">Technologie:</p>
+                    <p class="works__tech-list">
+                        HTML5, CSS3, SASS, Bootstrap, Jquery, Flickity,  Magnific Popup, Animate.css, Waypoints.js, countUp.js
+                    </p>
+                    <p class="works__subheading">Online</p>
+                    <a href="http://onwelo.com" class="works__link" target="_blank">onwelo.com</a>
+                </div>
             </div>
 
 
@@ -286,7 +301,7 @@
 </section>
 <section id="contact" class="contact section">
     <div class="container">
-        <h1 class="main-heading resume__heading">Kontakt</h1>
+        <h2 class="main-heading resume__heading">Kontakt</h2>
         <div class="contact__address-data data">
 
             <a href="tel:574139522" class="data__item data__item--first">
@@ -337,7 +352,7 @@
 <footer class="page-footer">
     <div class="container">
         <a href="javascript:" class="page-footer__up-btn">
-            <img src="img/arrow-up.png" alt="">
+            <img src="dist/img/arrow-up.png" alt="">
         </a>
 
         <p class="page-footer__text">
@@ -350,6 +365,6 @@
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="js/main.js"></script>
+<script src="dist/js/script.js"></script>
 </body>
 </html>

@@ -1,82 +1,102 @@
-var gulp = require('gulp'),
-    autoprefixer = require('gulp-autoprefixer'),
-    sass = require('gulp-sass'),
-    surcemap = require('gulp-sourcemaps'),
-    browserSync = require('browser-sync').create(),
-    streamqueue = require('streamqueue'),
-    concat = require('gulp-concat'),
-    rename = require("gulp-rename"),
-    concatCss = require('gulp-concat-css'),
-    uglify = require('gulp-uglify'),
-    compressCss = require('gulp-minify-css');
+//LOADED PLUGINS
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+var cleanCSS = require('gulp-clean-css');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var imagemin = require('gulp-imagemin');
+var changed = require('gulp-changed');
+var del = require('del');
+var sequence = require('run-sequence');
+var streamqueue = require('streamqueue');
 
 
-var autoprefixerOptions = {
-    browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+
+//PATHS
+var config = {
+    app: 'app',
+    dist: 'dist',
+
+    cssIn: 'app/css/**/*.css',
+    cssLoadPath : [
+        'app/css/normalize.css',
+        'app/css/main.css'
+    ],
+    jsLoadPath: [
+        'app/js/vendor/modernizr-2.8.3.min.js',
+        'app/js/main.js'
+    ],
+    jsIn : 'app/js/*.js',
+    imgIn: 'app/img/**/*.{jpg,jpeg,png,gif}',
+    sassIn: 'app/sass/main.scss',
+    sassOut: 'app/css',
+    sassWatch: 'app/sass/**/*.scss',
+    allOutput: 'dist/'
 };
 
-var sassOptions = {
-    errLogToConsole: true,
-    outputStyle: 'compressed'
-};
 
-var jsLoadPath = [
+//SERVE AND WATCH
+gulp.task('serve', ['sass', 'js'], function () {
 
-    './js/vendor/modernizr-2.8.3.min.js',
-    './js/main.js'
-];
-
-var cssLoadPath = [
-    'css/normalize.css'
-
-];
-
-
-gulp.task('concatCss', function () {
-    return gulp.src(cssLoadPath)
-        .pipe(surcemap.init())
-        .pipe(concatCss('lib.css'))
-        .pipe(surcemap.write())
-        .pipe(compressCss())
-        .pipe(gulp.dest('css/'));
+    gulp.watch(config.jsIn, ['js']);
+    gulp.watch(config.sassWatch, ['sass']);
 });
 
+
+//CSS
+
+gulp.task('css', function () {
+    return gulp.src(config.cssLoadPath)
+        .pipe(concat('main.css'))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(config.allOutput + 'css'));
+
+});
+
+//SASS, PREFIX
 gulp.task('sass', function () {
-    return gulp.src('sass/main.scss')
-        .pipe(surcemap.init())
-        .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(surcemap.write())
-        .pipe(autoprefixer(autoprefixerOptions))
-        .pipe(gulp.dest('css/'))
-        .pipe(browserSync.stream());
+    return gulp.src(config.sassIn)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(config.sassOut))
+        .on('finish', function () { gulp.start('css'); });
 });
 
 
+
+//JS
 gulp.task('js', function () {
     return streamqueue({objectMode: true},
-        gulp.src(jsLoadPath)
-            .pipe(concat("script.js"))
-            .pipe(gulp.dest("./js"))
-            .pipe(rename('script.min.js'))
-            .pipe(uglify())
-            .pipe(gulp.dest("./js")))
+        gulp.src(config.jsLoadPath)
+            .pipe(concat('script.js'))
+            // .pipe(uglify().on('error', function(err) {
+            //     gutil.log(gutil.colors.red('[Error]'), err.toString());
+            //     this.emit('end');
+            // }))
+            .pipe(gulp.dest(config.allOutput + 'js')))
+});
 
+//IMG
+gulp.task('img', function () {
+    return gulp.src(config.imgIn)
+        .pipe(changed('dist/img/'))
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img/'));
 });
 
 
-gulp.task('watch', function () {
 
-
-    gulp.watch('sass/**/*.scss', ['sass']);
-    gulp.watch('./js/**/*.js', ['js']);
-
-
+//CLEAN TASK
+gulp.task('clean', function () {
+    return del([config.allOutput]);
 });
 
-gulp.task('build', ['css', 'js']);
-
-gulp.task('default', ['browser-sync'], function () {
-    gulp.watch('sass/**/*.scss', ['sass']);
-    gulp.watch('./js/**/*.js', ['js']);
-
+//BUILD TASK
+gulp.task('build', function () {
+    sequence('clean', ['js', 'css', 'img']);
 });
+//DEFAULT TASK
+gulp.task('default', ['serve']);
