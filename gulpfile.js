@@ -23,6 +23,7 @@ var config = {
     cssLoadPath : [
         'app/css/normalize.css',
         'node_modules/font-awesome/css/font-awesome.min.css',
+        'node_modules/animate.css/animate.css',
         'app/css/main.css'
     ],
     jsLoadPath: [

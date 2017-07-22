@@ -82,7 +82,7 @@ var AppModule = function () {
                 const elementId = element.getAttribute('id');
 
                 if (scrollTop >= elementScrollTop) {
-                    const currentMenuItem = document.querySelector('.page-nav__link[data-id='+elementId+']');
+                    const currentMenuItem = document.querySelector('.page-nav__link[data-id=' + elementId + ']');
                     const menuItems = document.querySelectorAll('.page-nav__link');
 
                     menuItems.forEach(element => {
@@ -93,8 +93,6 @@ var AppModule = function () {
                 }
 
             });
-
-
 
 
         });
@@ -176,6 +174,69 @@ var AppModule = function () {
         document.onkeydown = null;
     }
 
+    function animation() {
+        //Header
+        var socialItems = $('.page-header__social-item');
+        var socialItemsArray = [].slice.call(socialItems);
+        var resumeRight = $('.resume .item.item--right');
+        var resumeRightArray = [].slice.call(resumeRight);
+        var resumeLeft = $('.resume .item.item--left');
+        var resumeLeftArray = [].slice.call(resumeLeft);
+        var works = $('.works__item-container');
+        var worksArray = [].slice.call(works);
+
+        var timeOut = 0;
+        var timeLeft = 200;
+
+
+        $('.page-header__heading').addClass('animated fadeInUp');
+        setTimeout(function () {
+            $('.page-header__subheading').addClass('animated fadeInUp')
+        }, 500);
+        setTimeout(function () {
+            var timeOut = 0;
+            socialItemsArray.forEach(function (element) {
+                setTimeout(function () {
+                    $(element).addClass('animated bounceIn');
+                }, timeOut);
+                timeOut += 200;
+            });
+        }, 1000);
+
+        (function () {
+            var timeOut = 0;
+            var timeLeft = 200;
+            resumeRightArray.forEach(function (element) {
+                setTimeout(function () {
+                    $(element).waypoint(function () {
+                        $(element).addClass('animated fadeInRight');
+                    }, {offset: '100%'});
+                }, timeOut);
+                timeOut += 500;
+            });
+
+            resumeLeftArray.forEach(function (element) {
+                setTimeout(function () {
+                    var timeLeft = 200;
+                    $(element).waypoint(function () {
+                        $(element).addClass('animated fadeInLeft');
+                    }, {offset: '100%'});
+                }, timeLeft);
+                timeLeft += 500;
+            })
+        })();
+
+        worksArray.forEach(function (element) {
+            $(element).waypoint(function () {
+                $(element).find('.works__image').addClass('animated fadeInLeft');
+                $(element).find('.works__item-content').addClass('animated fadeInRight');
+
+            },  {offset: '100%'});
+        });
+
+
+    }
+
     function init() {
         menuOpenFun();
         closeMenu();
@@ -183,6 +244,7 @@ var AppModule = function () {
         stickyMenu();
         menuScroll();
         formValidation();
+        animation();
     }
 
     return {

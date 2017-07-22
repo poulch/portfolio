@@ -91,12 +91,15 @@
         color: $white;
     }
 
+
+
     .item {
         position: relative;
         margin-bottom: 50px;
         transition: background .3s ease-in-out;
         padding: 10px;
         border-radius: 5px;
+        opacity: 0;
 
         @media (min-width: $screen-md) {
             width: 45%;
