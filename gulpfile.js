@@ -22,6 +22,7 @@ var config = {
     cssIn: 'app/css/**/*.css',
     cssLoadPath : [
         'app/css/normalize.css',
+        'node_modules/font-awesome/css/font-awesome.min.css',
         'app/css/main.css'
     ],
     jsLoadPath: [
