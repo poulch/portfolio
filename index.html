@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="pl">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,357 +11,680 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="dist/css/main.css" media="none" onload="if(media!='all')media='all'">
 </head>
+
 <body>
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<header class="page-header">
+    <header class="page-header">
 
-    <button class="page-header__menu-open">
-        <div class="page-header__span-container">
-            <span class="page-header__span"></span>
-            <span class="page-header__span"></span>
-            <span class="page-header__span"></span>
-        </div>
-    </button>
-    <div class="container">
-        <h1 class="page-header__heading">Paweł Chyła</h1>
-        <p class="page-header__subheading">front-end developer</p>
-        <ul class="page-header__social-list">
-
-            <li class="page-header__social-item">
-                <a href="http://facebook.com/PawelChyla88" target="_blank" class="page-header__social-link">
-                    <span class="page-header__social-icon fa fa-facebook" aria-hidden="true">
-
-                    </span>
-                </a>
-            </li>
-            <li class="page-header__social-item">
-                <a href="https://twitter.com/PaweChya88" target="_blank" class="page-header__social-link">
-                    <span class="page-header__social-icon fa fa-twitter" aria-hidden="true">
-
-                    </span>
-                </a>
-            </li>
-            <li class="page-header__social-item">
-                <a href="https://github.com/poulch" target="_blank" class="page-header__social-link">
-                    <span class="page-header__social-icon fa fa-github" aria-hidden="true">
-
-                    </span>
-                </a>
-            </li>
-            <li class="page-header__social-item page-header__social-item--last">
-                <a href="http://www.linkedin.com/in/paweł-chyła-3925baa3" target="_blank"
-                   class="page-header__social-link">
-                    <span class="page-header__social-icon fa fa-linkedin" aria-hidden="true">
-
-                    </span>
-                </a>
-            </li>
-
-        </ul>
-    </div>
-</header>
-<nav class="page-nav">
-    <h2 class="visuallyhidden">Nawigacja</h2>
-    <div class="page-nav__close-btn">
-        <span class="page-nav__close-span"></span>
-        <span class="page-nav__close-span"></span>
-    </div>
-    <div class="container">
-        <div class="page-nav__flex-container">
-            <ul class="page-nav__list">
-
-
-                <li class="page-nav__list-item">
-                    <a href="#about" data-id='about' class="page-nav__link">O mnie</a>
+        <button class="page-header__menu-open">
+            <div class="page-header__span-container">
+                <span class="page-header__span"></span>
+                <span class="page-header__span"></span>
+                <span class="page-header__span"></span>
+            </div>
+        </button>
+        <div class="container">
+            <h1 class="page-header__heading">Paweł Chyła</h1>
+            <p class="page-header__subheading">front-end developer</p>
+            <ul class="page-header__social-list">
+                <li class="page-header__social-item">
+                    <a href="https://twitter.com/PaweChya88" target="_blank" class="page-header__social-link">
+                        <span class="page-header__social-icon fa fa-twitter" aria-hidden="true"></span>
+                    </a>
                 </li>
 
-                <li class="page-nav__list-item">
-                    <a href="#cv" data-id='cv' class="page-nav__link">CV</a>
+                <li class="page-header__social-item">
+                    <a href="https://github.com/poulch" target="_blank" class="page-header__social-link">
+                        <span class="page-header__social-icon fa fa-github" aria-hidden="true"></span>
+                    </a>
                 </li>
 
-
-                <li class="page-nav__list-item">
-                    <a href="#works" data-id='works' class="page-nav__link">Realizacje</a>
-                </li>
-
-                <li class="page-nav__list-item page-nav__list-item--last">
-                    <a href="#contact" data-id='contact' class="page-nav__link">Kontakt</a>
+                <li class="page-header__social-item page-header__social-item--last">
+                    <a href="http://www.linkedin.com/in/paweł-chyła-3925baa3" target="_blank" class="page-header__social-link">
+                        <span class="page-header__social-icon fa fa-linkedin" aria-hidden="true"></span>
+                    </a>
                 </li>
             </ul>
         </div>
-    </div>
-</nav>
-<section id="about" class="about-me section">
-    <div class="container">
-        <h2 class="main-heading">O mnie</h2>
+    </header>
+    <nav class="page-nav">
+        <h2 class="visuallyhidden">Nawigacja</h2>
+        <div class="page-nav__close-btn">
+            <span class="page-nav__close-span"></span>
+            <span class="page-nav__close-span"></span>
+        </div>
+        <div class="container">
+            <div class="page-nav__flex-container">
+                <ul class="page-nav__list">
+                    <li class="page-nav__list-item">
+                        <a href="#about" data-id='about' class="page-nav__link">O mnie</a>
+                    </li>
 
-        <div class="about-me__text clearfix">
-            <img src="dist/img/me.jpg" class="about-me__photo" alt="Paweł Chyła photo">
-            <div class="about-me__text-container">
-                <p class="about-me__text-lead">
-                    Witam, mam na imię Paweł i jestem front-end developerem. Swoją przygodę zawodową rozpocząłem stażem
-                    zawodowym, który pozwolił mi zapoznać się z takimi technologiami jak Html5, Css3, Javascript, Php.
-                    Po
-                    zakończeniu stażu postanowiłem ukierunkuwać się na front-end i dalej rozwijać się w tym
-                    kierunku. Aktualnie cały czas szlifuje Javascript(ES6,) żeby móc w niedługim czasie zacząć poznawać
-                    frameworki javascipt z dobrze ugruntowaną wiedzą samego javascipt.
-                </p>
-                <p>
-                    Jeśli chodzi o mnie jestem osobą ambitną, cierpliwą, wytrwale dążącą do celu. Uwielbiam uczyć się
-                    nowych rzeczy i chciałbym stale doskonalić
-                    swoje umiejętności w zespole bardziej doświadczonych programistów. Lubie poznawać nowych ludzi a
-                    praca
-                    zespołowa sprawa mi przyjemność. Jestem osobą kontaktową i bezkonfliktową.
-                </p>
+                    <li class="page-nav__list-item">
+                        <a href="#cv" data-id='cv' class="page-nav__link">CV</a>
+                    </li>
 
-                <div class="about-me__btn-outer">
-                    <a href="cv.pdf" download="cv.pdf" class="btn"><span class="btn__icon fa fa-download"></span>
-                        Pobierz CV</a>
-                </div>
+                    <li class="page-nav__list-item">
+                        <a href="#works" data-id='works' class="page-nav__link">Realizacje</a>
+                    </li>
+
+                    <li class="page-nav__list-item page-nav__list-item--last">
+                        <a href="#contact" data-id='contact' class="page-nav__link">Kontakt</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <section id="about" class="about-me section">
+        <div class="container">
+            <h2 class="main-heading">O mnie</h2>
 
+            <div class="about-me__text clearfix">
+                <img src="dist/img/me.jpg" class="about-me__photo" alt="Paweł Chyła photo">
+                <div class="about-me__text-container">
+                    <p class="about-me__text-lead">
+                        Witam, mam na imię Paweł i jestem front-end developerem. Swoją przygodę zawodową rozpocząłem stażem zawodowym, który pozwolił
+                        mi zapoznać się z takimi technologiami jak Html5, Css3, Javascript, Php (framework Zend 1). Po zakończeniu
+                        stażu postanowiłem <!doctype html>
+<html class="no-js" lang="pl">
 
-    </div>
-</section>
-<section id="cv" class="resume section">
-    <div class="container">
-        <h2 class="main-heading resume__heading">Curriculum Vitae</h2>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Paweł Chyła - portfolio</title>
+    <meta name="description" content="Paweł Chyła - portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <article class="resume__experiences">
-            <div class="resume__subheading">
-                <h2 class="main-subheading">Doświadczenie</h2>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="dist/css/main.css" media="none" onload="if(media!='all')media='all'">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <header class="page-header">
+
+        <button class="page-header__menu-open">
+            <div class="page-header__span-container">
+                <span class="page-header__span"></span>
+                <span class="page-header__span"></span>
+                <span class="page-header__span"></span>
             </div>
+        </button>
+        <div class="container">
+            <h1 class="page-header__heading">Paweł Chyła</h1>
+            <p class="page-header__subheading">front-end developer</p>
+            <ul class="page-header__social-list">
+                <li class="page-header__social-item">
+                    <a href="https://twitter.com/PaweChya88" target="_blank" class="page-header__social-link">
+                        <span class="page-header__social-icon fa fa-twitter" aria-hidden="true"></span>
+                    </a>
+                </li>
 
-            <div class="resume__content">
-                <div class="resume__icon-container">
-                    <span class="resume__icon fa fa-folder-open-o"></span>
-                </div>
+                <li class="page-header__social-item">
+                    <a href="https://github.com/poulch" target="_blank" class="page-header__social-link">
+                        <span class="page-header__social-icon fa fa-github" aria-hidden="true"></span>
+                    </a>
+                </li>
 
-
-                <div class="resume__item item item--right">
-                    <p class="item__heading">Junior webdeveloper</p>
-                    <p class="item__subheading"><span class="item__company-name">Inwave Interactive</span> 2016.11 - Do
-                        teraz</p>
-                    <p class="item__text">
-                        W Inwave Interactive pracuje od połowy listopada 2016 roku. Zajmuje się tam cięciem szablonów
-                        psd do kodu html/css/js.
-                        Wykoszystuje do tego sematyczne znaczniki z Html5 wraz preprocesor css - Sass - którego
-                        kompiljje do kodu css przy pomocu gulpa. Na codzień używam takich narzędzi jak : Bower , Npm,
-                        Webstorm, Git, Bitbucket
-                    </p>
-                </div>
-                <div class="resume__item item item--left">
-                    <p class="item__heading">Stażysta </p>
-                    <p class="item__subheading"><span class="item__company-name">Inwave Interactive</span> 2016.02 -
-                        2016.11</p>
-                    <p class="item__text">
-                        Podczas stażu, przez okres pół roku poznałem technologie służące do budowy nowoczesnych witryn
-                        internetowych. Swoją przygodę jako webdeveloper rozocząłem od praktycznej nauki Html i Css
-                        poprzez ci cięcie szablonów psd, jednak nie były to projekty komercyjne. Po opanowaniu podstaw
-                        front edu przyszedł czas na Php i Mysql. Po nauczeniu się podstaw Php zostałem wspraowdzony we
-                        framework Zend 1 i wykonałem przy jego pomocy kompletny backedn bloga.
-                    </p>
-                </div>
-                <div class="resume__item item item--right item--right-v2">
-                    <p class="item__heading">Pracownik administracyjny</p>
-                    <p class="item__subheading">Urząd gminy w Radomyślu nad Sanem</p>
-                    <p class="item__text">
-                        Jako pracownik administaracyjny pracowałem w urzędzie gminy w Radomyślu nad Sanem przez okres
-                        około 2 lat z przerwami. Zajmowałem się tam obsługą interesantów, odbieraniem telefonów i
-                        faksów,obsługą kserokopiarki.
-                    </p>
-                </div>
-            </div>
-
-
-        </article>
-        <article class="resume__education education">
-            <div class="resume__subheading resume__subheading--education">
-                <h3 class="main-subheading">Edukacja</h3>
-            </div>
-
-            <div class="resume__content">
-                <div class="resume__icon-container resume__icon-container--education">
-                    <span class="resume__icon fa fa-book"></span>
-                </div>
-
-                <div class="resume__item item item--right">
-                    <p class="item__heading">Wykształcenie wyższe</p>
-                    <p class="item__subheading">Wyższa Szkoła Humanistyczno-Przyrodnicza w Sandomierzu<span
-                            class="item__company-name-left">2009 - 2012</span></p>
-                    <p class="item__text">
-                        Trzyletnie studnia licencjackie na kierunku administracja
-                    </p>
-                </div>
-
-                <div class="resume__item item item--left item--left-v2">
-                    <p class="item__heading">Wyszktałcenie średnie</p>
-                    <p class="item__subheading"><span
-                            class="item__company-name">Zespół Szkół Nr 4 w Stalowej Woli</span> 2004 - 2007</p>
-                    <p class="item__text item__text--left">
-                        Trzyletnie liceum ogolnokształconce o profilu integracja europejska.
-                    </p>
-                </div>
-
-                <div class="resume__icon-container resume__icon-container--finish">
-                    <img src="dist/img/ribbon.png" alt="">
-                </div>
-            </div>
-        </article>
-
-
-    </div>
-</section>
-<section id="works" class="works section">
-    <div class="container">
-        <h2 class="main-heading">Realizacje</h2>
-
-        <div class="works__items clearfix">
-
-            <div class="works__item-container">
-                <img src="dist/img/works/optopol.jpg" class="works__image" alt="">
-
-                <div class="works__item-content">
-                    <h3 class="works__name">OPTOPOL</h3>
-                    <p class="works__subheading">Technologie:</p>
-                    <p class="works__tech-list">
-                        HTML5, CSS3, SASS, JQuery, ScrollMagic, GSAP, BxSlider, packery
-                    </p>
-                    <p class="works__subheading">Online</p>
-                    <a href="http://optopol.com/" class="works__link" target="_blank">optopol.com</a>
-
-                </div>
-            </div>
-
-            <div class="works__item-container">
-                <img src="dist/img/works/inwave.jpg" class="works__image" alt="">
-
-                <div class="works__item-content">
-                    <h3 class="works__name">INWAVE</h3>
-                    <p class="works__subheading">Technologie:</p>
-                    <p class="works__tech-list">
-                        HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Flickity, AOS,
-                    </p>
-                    <p class="works__subheading">Online</p>
-                    <a href="http://inwave.pl" class="works__link" target="_blank">inwave.pl</a>
-                </div>
-            </div>
-
-            <div class="works__item-container">
-                <img src="dist/img/works/salamandra.jpg" class="works__image" alt="">
-                <div class="works__item-content">
-                    <h3 class="works__name">INSTYTUT SALAMANDRA</h3>
-                    <p class="works__subheading">Technologie:</p>
-                    <p class="works__tech-list">
-                        HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Flickity, AOS,
-                    </p>
-                    <p class="works__subheading">Online</p>
-                    <a href="http://instytutsalamandra.pl" class="works__link" target="_blank">instytutsalamandra.pl</a>
-                </div>
-            </div>
-
-            <div class="works__item-container">
-                <img src="dist/img/works/stodola.jpg" class="works__image" alt="">
-                <div class="works__item-content">
-                    <h3 class="works__name">NOWOCZESNA STODOLA</h3>
-                    <p class="works__subheading">Technologie:</p>
-                    <p class="works__tech-list">
-                        HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Animate.css, ScrollMagic, GSAP, Waypoints.js,
-                    </p>
-                    <p class="works__subheading">Online</p>
-                    <a href="http://nowoczesnastodola.pl" class="works__link" target="_blank">nowoczesnastodola.pl</a>
-                </div>
-            </div>
-
-            <div class="works__item-container">
-                <img src="dist/img/works/onwelo.jpg" class="works__image" alt="">
-                <div class="works__item-content">
-                    <h3 class="works__name">ONWELO</h3>
-                    <p class="works__subheading">Technologie:</p>
-                    <p class="works__tech-list">
-                        HTML5, CSS3, SASS, Bootstrap, Jquery, Flickity,  Magnific Popup, Animate.css, Waypoints.js, countUp.js
-                    </p>
-                    <p class="works__subheading">Online</p>
-                    <a href="http://onwelo.com" class="works__link" target="_blank">onwelo.com</a>
-                </div>
-            </div>
-
-
+                <li class="page-header__social-item page-header__social-item--last">
+                    <a href="http://www.linkedin.com/in/paweł-chyła-3925baa3" target="_blank" class="page-header__social-link">
+                        <span class="page-header__social-icon fa fa-linkedin" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-</section>
-<section id="contact" class="contact section">
-    <div class="container">
-        <h2 class="main-heading resume__heading">Kontakt</h2>
-        <div class="contact__address-data data">
+    </header>
+    <nav class="page-nav">
+        <h2 class="visuallyhidden">Nawigacja</h2>
+        <div class="page-nav__close-btn">
+            <span class="page-nav__close-span"></span>
+            <span class="page-nav__close-span"></span>
+        </div>
+        <div class="container">
+            <div class="page-nav__flex-container">
+                <ul class="page-nav__list">
+                    <li class="page-nav__list-item">
+                        <a href="#about" data-id='about' class="page-nav__link">O mnie</a>
+                    </li>
 
-            <a href="tel:574139522" class="data__item data__item--first">
-                <div class="data__icon-container data__icon-container--first">
-                    <span class="data__icon fa fa-phone" aria-hidden="true"></span>
+                    <li class="page-nav__list-item">
+                        <a href="#cv" data-id='cv' class="page-nav__link">CV</a>
+                    </li>
 
-                </div>
+                    <li class="page-nav__list-item">
+                        <a href="#works" data-id='works' class="page-nav__link">Realizacje</a>
+                    </li>
 
-                <div class="data__text">
-                    <p class="data__heading">Telefon</p>
-                    <div class="data__content">
-                        574139522
+                    <li class="page-nav__list-item page-nav__list-item--last">
+                        <a href="#contact" data-id='contact' class="page-nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="about" class="about-me section">
+        <div class="container">
+            <h2 class="main-heading">O mnie</h2>
+
+            <div class="about-me__text clearfix">
+                <img src="dist/img/me.jpg" class="about-me__photo" alt="Paweł Chyła photo">
+                <div class="about-me__text-container">
+                    <p class="about-me__text-lead">
+                        Witam, mam na imię Paweł i jestem front-end developerem. Swoją przygodę zawodową rozpocząłem stażem zawodowym, który pozwolił
+                        mi zapoznać się z takimi technologiami jak Html5, Css3, Javascript, Php (framework Zend 1). Po zakończeniu
+                        stażu postanowiłem ukierunkować się na front-end i dalej rozwijać się w tym kierunku. Aktualnie cały
+                        czas szlifuje Javascript(ES6,) oraz uczę się frameworka React wraz z jego całym ekosystemem (redux,
+                        react-router, redux-thunk). Podczas nauki reacta wykorzystuje składnie ES6, którą następnie transpiluje
+                        przy pomocy babel, oraz bundluje za pomocą webpacka.
+                    </p>
+                    <p>
+                        Jeśli chodzi o mnie jestem osobą ambitną, cierpliwą, wytrwale dążącą do celu. Uwielbiam uczyć się nowych rzeczy i chciałbym
+                        stale doskonalić swoje umiejętności i poznawać dobre praktyki programując w zespole bardziej doświadczonych programistów. Lubie poznawać
+                        nowych ludzi a praca zespołowa sprawa mi przyjemność. Jestem osobą kontaktową i bezkonfliktową.
+                    </p>
+
+                    <div class="about-me__btn-outer">
+                        <a href="cv.pdf" download="cv.pdf" class="btn">
+                            <span class="btn__icon fa fa-download"></span>
+                            Pobierz CV</a>
                     </div>
                 </div>
-            </a>
-
-
-            <a href="mailto:chyla1988@gmail.com" class="data__item">
-                <div class="data__icon-container data__icon-container--secend">
-                    <span class="data__icon fa fa-envelope" aria-hidden="true"></span>
-                </div>
-
-                <div class="data__text">
-                    <p class="data__heading">E-mail</p>
-                    <div class="data__content">
-                        chyla1988@gmail.com
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <form action="https://formspree.io/chyla1988@gmail.com" class="form" method="POST">
-            <div class="form__group">
-                <input type="text" name="name" class="form__input form__input--float form__input--float--first "
-                       placeholder="Imię i nazwisko">
-                <input type="text" name="email" class="form__input form__input--float" placeholder="Adres e-mail">
             </div>
 
-            <textarea name="text" rows="4" class="form__input form__input--textarea"
-                      placeholder="Tekst wiadomości"></textarea>
-            <button type="submit" class="form__submit"><span class="form__submit-icon fa fa-paper-plane"
-                                                             aria-hidden="true"></span> Wyślij
-            </button>
-        </form>
 
-    </div>
-</section>
-<footer class="page-footer">
-    <div class="container">
-        <a href="javascript:" class="page-footer__up-btn">
-            <img src="dist/img/arrow-up.png" alt="">
-        </a>
+        </div>
+    </section>
+    <section id="cv" class="resume section">
+        <div class="container">
+            <h2 class="main-heading resume__heading">Curriculum Vitae</h2>
 
-        <p class="page-footer__text">
-            &copy; 2017 Paweł Chyła
-        </p>
+            <article class="resume__experiences">
+                <div class="resume__subheading">
+                    <h2 class="main-subheading">Doświadczenie</h2>
+                </div>
 
-    </div>
-</footer>
+                <div class="resume__content">
+                    <div class="resume__icon-container">
+                        <span class="resume__icon fa fa-folder-open-o"></span>
+                    </div>
 
-<script  src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+
+                    <div class="resume__item item item--right">
+                        <p class="item__heading">Junior webdeveloper</p>
+                        <p class="item__subheading">
+                            <span class="item__company-name">Inwave Interactive</span> 2016.11 - Do teraz
+                        </p>
+                        <p class="item__text">
+                            W Inwave Interactive pracuje od połowy listopada 2016 roku. Zajmuje się tam cięciem szablonów psd do kodu html/css/js. Wykorzystuje
+                            do tego semantyczne znaczniki z Html5 wraz preprocesor css - Sass - którego kompiluje do kodu
+                            css przy pomocy gulpa, wykorzystuje także jQuery do nadania stronie większej interaktywności. Na codzień używam takich narzędzi jak : Bower , Npm, Webstorm, Git, Bitbucket
+                        </p>
+                    </div>
+                    <div class="resume__item item item--left">
+                        <p class="item__heading">Stażysta </p>
+                        <p class="item__subheading">
+                            <span class="item__company-name">Inwave Interactive</span> 2016.02 - 2016.11
+                        </p>
+                        <p class="item__text">
+                            Podczas stażu, przez okres pół roku poznałem technologie służące do budowy nowoczesnych witryn internetowych. Swoją przygodę
+                            jako webdeveloper rozocząłem od praktycznej nauki Html i Css poprzez ci cięcie szablonów psd,
+                            jednak nie były to projekty komercyjne. Po opanowaniu podstaw front endu przyszedł czas na Php
+                            i Mysql. Po nauczeniu się podstaw Php zostałem wprowadzony we framework Zend 1 i wykonałem przy
+                            jego pomocy kompletny backend bloga.
+                        </p>
+                    </div>
+                    <div class="resume__item item item--right item--right-v2">
+                        <p class="item__heading">Pracownik administracyjny</p>
+                        <p class="item__subheading">Urząd gminy w Radomyślu nad Sanem</p>
+                        <p class="item__text">
+                            Jako pracownik administracyjny pracowałem w urzędzie gminy w Radomyślu nad Sanem przez okres około 2 lat z przerwami. Zajmowałem
+                            się tam obsługą interesantów, odbieraniem telefonów i faksów,obsługą kserokopiarki.
+                        </p>
+                    </div>
+                </div>
+
+
+            </article>
+            <article class="resume__education education">
+                <div class="resume__subheading resume__subheading--education">
+                    <h3 class="main-subheading">Edukacja</h3>
+                </div>
+
+                <div class="resume__content">
+                    <div class="resume__icon-container resume__icon-container--education">
+                        <span class="resume__icon fa fa-book"></span>
+                    </div>
+
+                    <div class="resume__item item item--right">
+                        <p class="item__heading">Wykształcenie wyższe</p>
+                        <p class="item__subheading">Wyższa Szkoła Humanistyczno-Przyrodnicza w Sandomierzu
+                            <span class="item__company-name-left">2009 - 2012</span>
+                        </p>
+                        <p class="item__text">
+                            Trzyletnie studnia licencjackie na kierunku administracja
+                        </p>
+                    </div>
+
+                    <div class="resume__item item item--left item--left-v2">
+                        <p class="item__heading">Wykształcenie średnie</p>
+                        <p class="item__subheading">
+                            <span class="item__company-name">Zespół Szkół Nr 4 w Stalowej Woli</span> 2004 - 2007</p>
+                        <p class="item__text item__text--left">
+                            Trzyletnie liceum ogólnokształcące o profilu integracja europejska.
+                        </p>
+                    </div>
+
+                    <div class="resume__icon-container resume__icon-container--finish">
+                        <img src="dist/img/ribbon.png" alt="">
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+    <section id="works" class="works section">
+        <div class="container">
+            <h2 class="main-heading">Realizacje</h2>
+
+            <div class="works__items clearfix">
+
+                <div class="works__item-container">
+                    <img src="dist/img/works/optopol.png" class="works__image" alt="">
+
+                    <div class="works__item-content">
+                        <h3 class="works__name">OPTOPOL</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, JQuery, ScrollMagic, GSAP, BxSlider, packery
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://optopol.com/" class="works__link" target="_blank">new.optopol.com.pl</a>
+
+                    </div>
+                </div>
+
+                <div class="works__item-container reverse">
+                    <img src="dist/img/works/inwave.png" class="works__image" alt="">
+
+                    <div class="works__item-content">
+                        <h3 class="works__name">INWAVE</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Flickity, AOS,
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://inwave.pl" class="works__link" target="_blank">inwave.pl</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container">
+                    <img src="dist/img/works/fujitsu.png" class="works__image" alt="">
+                    <div class="works__item-content">
+                        <h3 class="works__name">FQS Poland</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://instytutsalamandra.pl" class="works__link" target="_blank">instytutsalamandra.pl</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container reverse">
+                    <img src="dist/img/works/stodola.png" class="works__image" alt="">
+                    <div class="works__item-content">
+                        <h3 class="works__name">NOWOCZESNA STODOLA</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Animate.css, ScrollMagic, GSAP, Waypoints.js,
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://nowoczesnastodola.pl" class="works__link" target="_blank">nowoczesnastodola.pl</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container">
+                    <img src="dist/img/works/onwelo.png" class="works__image" alt="">
+                    <div class="works__item-content">
+                        <h3 class="works__name">ONWELO</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery, Flickity, Magnific Popup, Animate.css, Waypoints.js, countUp.js
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://onwelo.com" class="works__link" target="_blank">onwelo.com</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container reverse">
+                        <img src="dist/img/works/eris-conceptstore.png" class="works__image" alt="">
+                        <div class="works__item-content">
+                            <h3 class="works__name">Dr Irena Eris - Concept Store</h3>
+                            <p class="works__subheading">Technologie:</p>
+                            <p class="works__tech-list">
+                                HTML5, CSS3, SASS, Bootstrap, Jquery, Animate.css, Waypoints.js
+                            </p>
+                            <p class="works__subheading">Online</p>
+                            <a href="http://drirenaeris.com/conceptstore" class="works__link" target="_blank">drirenaeris.com/conceptstore</a>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="main-heading resume__heading">Kontakt</h2>
+            <div class="contact__address-data data">
+                <a href="mailto:chyla1988@gmail.com" class="data__item">
+                    <div class="data__icon-container data__icon-container--secend">
+                        <span class="data__icon fa fa-envelope" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="data__text">
+                        <p class="data__heading">E-mail</p>
+                        <div class="data__content">
+                            chyla1988@gmail.com
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <form action="https://formspree.io/chyla1988@gmail.com" class="form" method="POST">
+                <div class="form__group">
+                    <input type="text" name="name" class="form__input form__input--float form__input--float--first " placeholder="Imię i nazwisko">
+                    <input type="text" name="email" class="form__input form__input--float" placeholder="Adres e-mail">
+                </div>
+
+                <textarea name="text" rows="4" class="form__input form__input--textarea" placeholder="Tekst wiadomości"></textarea>
+                <button type="submit" class="form__submit">
+                    <span class="form__submit-icon fa fa-paper-plane" aria-hidden="true"></span> Wyślij
+                </button>
+            </form>
+
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <a href="javascript:" class="page-footer__up-btn">
+                <img src="dist/img/arrow-up.png" alt="">
+            </a>
+
+            <p class="page-footer__text">
+                &copy; 2017 Paweł Chyła
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-<script  src="dist/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="dist/js/script.js"></script>
 </body>
+
+</html>
+ się na front-end i dalej rozwijać się w tym kierunku. Aktualnie cały
+                        czas szlifuje Javascript(ES6,) oraz uczę się frameworka React wraz z jego całym ekosystemem (redux,
+                        react-router, redux-thunk). Podczas nauki reacta wykorzystuje składnie ES6, którą następnie transpiluje
+                        przy pomocy babel, oraz bundluje za pomocą webpacka.
+                    </p>
+                    <p>
+                        Jeśli chodzi o mnie jestem osobą ambitną, cierpliwą, wytrwale dążącą do celu. Uwielbiam uczyć się nowych rzeczy i chciałbym
+                        stale doskonalić swoje umiejętności i poznawać dobre praktyki programując w zespole bardziej doświadczonych programistów. Lubie poznawać
+                        nowych ludzi a praca zespołowa sprawa mi przyjemność. Jestem osobą kontaktową i bezkonfliktową.
+                    </p>
+
+                    <div class="about-me__btn-outer">
+                        <a href="cv.pdf" download="cv.pdf" class="btn">
+                            <span class="btn__icon fa fa-download"></span>
+                            Pobierz CV</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="cv" class="resume section">
+        <div class="container">
+            <h2 class="main-heading resume__heading">Curriculum Vitae</h2>
+
+            <article class="resume__experiences">
+                <div class="resume__subheading">
+                    <h2 class="main-subheading">Doświadczenie</h2>
+                </div>
+
+                <div class="resume__content">
+                    <div class="resume__icon-container">
+                        <span class="resume__icon fa fa-folder-open-o"></span>
+                    </div>
+
+
+                    <div class="resume__item item item--right">
+                        <p class="item__heading">Junior webdeveloper</p>
+                        <p class="item__subheading">
+                            <span class="item__company-name">Inwave Interactive</span> 2016.11 - Do teraz
+                        </p>
+                        <p class="item__text">
+                            W Inwave Interactive pracuje od połowy listopada 2016 roku. Zajmuje się tam cięciem szablonów psd do kodu html/css/js. Wykorzystuje
+                            do tego sematyczne znaczniki z Html5 wraz preprocesor css - Sass - którego kompiluje do kodu
+                            css przy pomocu gulpa, wykorzystuje także jQuery do nadania stronie większej interaktywności. Na codzień używam takich narzędzi jak : Bower , Npm, Webstorm, Git, Bitbucket
+                        </p>
+                    </div>
+                    <div class="resume__item item item--left">
+                        <p class="item__heading">Stażysta </p>
+                        <p class="item__subheading">
+                            <span class="item__company-name">Inwave Interactive</span> 2016.02 - 2016.11
+                        </p>
+                        <p class="item__text">
+                            Podczas stażu, przez okres pół roku poznałem technologie służące do budowy nowoczesnych witryn internetowych. Swoją przygodę
+                            jako webdeveloper rozocząłem od praktycznej nauki Html i Css poprzez ci cięcie szablonów psd,
+                            jednak nie były to projekty komercyjne. Po opanowaniu podstaw front endu przyszedł czas na Php
+                            i Mysql. Po nauczeniu się podstaw Php zostałem wprowadzony we framework Zend 1 i wykonałem przy
+                            jego pomocy kompletny backend bloga.
+                        </p>
+                    </div>
+                    <div class="resume__item item item--right item--right-v2">
+                        <p class="item__heading">Pracownik administracyjny</p>
+                        <p class="item__subheading">Urząd gminy w Radomyślu nad Sanem</p>
+                        <p class="item__text">
+                            Jako pracownik administracyjny pracowałem w urzędzie gminy w Radomyślu nad Sanem przez okres około 2 lat z przerwami. Zajmowałem
+                            się tam obsługą interesantów, odbieraniem telefonów i faksów,obsługą kserokopiarki.
+                        </p>
+                    </div>
+                </div>
+
+
+            </article>
+            <article class="resume__education education">
+                <div class="resume__subheading resume__subheading--education">
+                    <h3 class="main-subheading">Edukacja</h3>
+                </div>
+
+                <div class="resume__content">
+                    <div class="resume__icon-container resume__icon-container--education">
+                        <span class="resume__icon fa fa-book"></span>
+                    </div>
+
+                    <div class="resume__item item item--right">
+                        <p class="item__heading">Wykształcenie wyższe</p>
+                        <p class="item__subheading">Wyższa Szkoła Humanistyczno-Przyrodnicza w Sandomierzu
+                            <span class="item__company-name-left">2009 - 2012</span>
+                        </p>
+                        <p class="item__text">
+                            Trzyletnie studnia licencjackie na kierunku administracja
+                        </p>
+                    </div>
+
+                    <div class="resume__item item item--left item--left-v2">
+                        <p class="item__heading">Wyszktałcenie średnie</p>
+                        <p class="item__subheading">
+                            <span class="item__company-name">Zespół Szkół Nr 4 w Stalowej Woli</span> 2004 - 2007</p>
+                        <p class="item__text item__text--left">
+                            Trzyletnie liceum ogólnokształconce o profilu integracja europejska.
+                        </p>
+                    </div>
+
+                    <div class="resume__icon-container resume__icon-container--finish">
+                        <img src="dist/img/ribbon.png" alt="">
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+    <section id="works" class="works section">
+        <div class="container">
+            <h2 class="main-heading">Realizacje</h2>
+
+            <div class="works__items clearfix">
+
+                <div class="works__item-container">
+                    <img src="dist/img/works/optopol.png" class="works__image" alt="">
+
+                    <div class="works__item-content">
+                        <h3 class="works__name">OPTOPOL</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, JQuery, ScrollMagic, GSAP, BxSlider, packery
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://optopol.com/" class="works__link" target="_blank">new.optopol.com.pl</a>
+
+                    </div>
+                </div>
+
+                <div class="works__item-container reverse">
+                    <img src="dist/img/works/inwave.png" class="works__image" alt="">
+
+                    <div class="works__item-content">
+                        <h3 class="works__name">INWAVE</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Flickity, AOS,
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://inwave.pl" class="works__link" target="_blank">inwave.pl</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container">
+                    <img src="dist/img/works/fujitsu.png" class="works__image" alt="">
+                    <div class="works__item-content">
+                        <h3 class="works__name">FQS Poland</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://instytutsalamandra.pl" class="works__link" target="_blank">instytutsalamandra.pl</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container reverse">
+                    <img src="dist/img/works/stodola.png" class="works__image" alt="">
+                    <div class="works__item-content">
+                        <h3 class="works__name">NOWOCZESNA STODOLA</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery, Magnific Popup, Animate.css, ScrollMagic, GSAP, Waypoints.js,
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://nowoczesnastodola.pl" class="works__link" target="_blank">nowoczesnastodola.pl</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container">
+                    <img src="dist/img/works/onwelo.png" class="works__image" alt="">
+                    <div class="works__item-content">
+                        <h3 class="works__name">ONWELO</h3>
+                        <p class="works__subheading">Technologie:</p>
+                        <p class="works__tech-list">
+                            HTML5, CSS3, SASS, Bootstrap, Jquery, Flickity, Magnific Popup, Animate.css, Waypoints.js, countUp.js
+                        </p>
+                        <p class="works__subheading">Online</p>
+                        <a href="http://onwelo.com" class="works__link" target="_blank">onwelo.com</a>
+                    </div>
+                </div>
+
+                <div class="works__item-container reverse">
+                        <img src="dist/img/works/eris-conceptstore.png" class="works__image" alt="">
+                        <div class="works__item-content">
+                            <h3 class="works__name">Dr Irena Eris - Concept Store</h3>
+                            <p class="works__subheading">Technologie:</p>
+                            <p class="works__tech-list">
+                                HTML5, CSS3, SASS, Bootstrap, Jquery, Animate.css, Waypoints.js
+                            </p>
+                            <p class="works__subheading">Online</p>
+                            <a href="http://drirenaeris.com/conceptstore" class="works__link" target="_blank">drirenaeris.com/conceptstore</a>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="main-heading resume__heading">Kontakt</h2>
+            <div class="contact__address-data data">
+                <a href="mailto:chyla1988@gmail.com" class="data__item">
+                    <div class="data__icon-container data__icon-container--secend">
+                        <span class="data__icon fa fa-envelope" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="data__text">
+                        <p class="data__heading">E-mail</p>
+                        <div class="data__content">
+                            chyla1988@gmail.com
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <form action="https://formspree.io/chyla1988@gmail.com" class="form" method="POST">
+                <div class="form__group">
+                    <input type="text" name="name" class="form__input form__input--float form__input--float--first " placeholder="Imię i nazwisko">
+                    <input type="text" name="email" class="form__input form__input--float" placeholder="Adres e-mail">
+                </div>
+
+                <textarea name="text" rows="4" class="form__input form__input--textarea" placeholder="Tekst wiadomości"></textarea>
+                <button type="submit" class="form__submit">
+                    <span class="form__submit-icon fa fa-paper-plane" aria-hidden="true"></span> Wyślij
+                </button>
+            </form>
+
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <a href="javascript:" class="page-footer__up-btn">
+                <img src="dist/img/arrow-up.png" alt="">
+            </a>
+
+            <p class="page-footer__text">
+                &copy; 2017 Paweł Chyła
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+
 </html>
