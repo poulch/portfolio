@@ -37,7 +37,9 @@ var AppModule = function () {
         menuClose.addEventListener('click', () => {
             pageNav.classList.remove('open');
             enableScroll();
-            window.removeEventListener('touchmove');
+            window.removeEventListener('touchmove', function() {
+
+            });
         });
     }
 
@@ -253,7 +255,7 @@ var AppModule = function () {
 }();
 
 
-$(document).ready(function () {
+$(window).on('load', function () {
     AppModule.init();
 });
 
