@@ -57,18 +57,18 @@
                 .works__image {
                     order: 2;
                     margin-right: 0;
-                    margin-left: 20px;                    
+                    margin-left: 20px;
                 }
                 .works__subheading {
-                    margin-left: auto;                    
+                    margin-left: auto;
                 }
 
                 .works__link {
-                    margin-left: auto;                    
+                    margin-left: auto;
                 }
 
                 .works__name {
-                    margin-left: auto;                    
+                    margin-left: auto;
                 }
             }
         }
@@ -103,7 +103,7 @@
         }
     }
     &__subheading {
-        display: inline-block;        
+        display: inline-block;
         @include main-font;
         font-weight: 600;
         color: $main-color;
@@ -113,6 +113,7 @@
         display: inline-block;
     }
     &__tech-list {
+        width: 100%;
         @include main-font;
         font-weight: 600;
         color: $main-color;
