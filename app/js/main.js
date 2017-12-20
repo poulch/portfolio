@@ -241,7 +241,6 @@ var AppModule = function () {
         stickyMenu();
         menuScroll();
         formValidation();
-        animation();
     }
 
     return {

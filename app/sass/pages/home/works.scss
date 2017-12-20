@@ -74,7 +74,6 @@
         }
     }
     &__item-content {
-        opacity: 0;
         @media (min-width: $screen-md) {
             width: 50%;
             height: 420px;
@@ -86,7 +85,6 @@
     }
     &__image {
         max-width: 100%;
-        opacity: 0;
         @media (min-width: $screen-md) {
             margin-right: 20px;
             height: 420px;
